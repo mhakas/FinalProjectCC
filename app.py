@@ -61,5 +61,5 @@ def predict():
     return jsonify({'prediction': prediction})
 
 if __name__ == "__main__":
-    clf = joblib.load("titanic_prediction.joblib")
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    clf = joblib.load("titanic_fare_prediction.joblib")
+    app.run(host='0.0.0.0', port=8080, debug=True)
